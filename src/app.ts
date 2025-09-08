@@ -65,7 +65,8 @@ const server = new BunExpress({
     bunMCP: setupMCPaaSServer(),
     options: {
         cors: true,
-        json: true
+        json: true,
+        port: 8080,
     }
 });
 
