@@ -78,12 +78,15 @@ server.use('/api', (req: any, res: any, next: any) => {
     next();
 });
 
+server.getApp().listen(8080);
+
 /**
  * Start BunExpress server and show available endpoints
  */
 async function startServer() {
     try {
         await server.start();
+
         console.log('🚀 Server started!');
         console.log('📊 Server status:', server.health());
         console.log('🔗 Endpoints:');
