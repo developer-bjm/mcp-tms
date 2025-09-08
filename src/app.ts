@@ -20,7 +20,7 @@
  *   PORT           - Server port (default: 3000)
  */
 
-import { BunMCP, BunExpress } from '@mcpass/sdk';
+import { BunMCP, BunExpress } from '@mcpweb-org/sdk';
 import { MCPAAS_API_KEY, MCPAAS_APP_ID } from './config';
 import { registerTicketAPIs } from './tools/tickets';
 import { registerMessageAPIs } from './tools/messages';

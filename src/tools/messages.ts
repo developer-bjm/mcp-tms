@@ -2,7 +2,7 @@
  * Message Management API Registrations
  */
 
-import { BunMCP } from '@mcpass/sdk';
+import { BunMCP } from '@mcpweb-org/sdk';
 import { z } from 'zod';
 import { COMPLEX_ID, BASE_URL, getAuthToken } from '../config';
 
