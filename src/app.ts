@@ -34,8 +34,8 @@ function setupMCPaaSServer(): BunMCP {
     try {
         const bunMCP = new BunMCP(
             {
-                name: "mcpaas-streamable-server",
-                description: "MCPaaS example server with StreamableHTTPServerTransport",
+                name: "tms-mcp",
+                description: "A Ticket Management System, that can help users create and manage support tickets.",
                 version: "1.0.0",
                 capabilities: {
                     tools: true,
@@ -64,8 +64,6 @@ function setupMCPaaSServer(): BunMCP {
 const server = new BunExpress({
     bunMCP: setupMCPaaSServer(),
     options: {
-        port: process.env.PORT ? parseInt(process.env.PORT) : 3000,
-        host: 'localhost',
         cors: true,
         json: true
     }
